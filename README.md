@@ -17,16 +17,16 @@ biogeo = data.frame. Lines with names of sample units, must be the same names th
 
 ### output:
 
-Ecoregion.per.node = a matrix object; lines containig the nodes and the colums the species. Each cell present the Ecorregion that each ancestor of the species i was found;
+Ecoregion.per.node = a matrix object. lines containig the nodes and the colums the species. Each cell present the Ecorregion that each ancestral of species i was found;
 
-Diversification.Assembly_Jetz = numeric. Biome Diversification values calculated according to a modifyied version of Jetz's metric of diversification to account only for local diversification;
+Diversification.Assembly_Jetz = numeric. Biome Diversification values calculated according to a modifyied version of Jetz's metric of diversification;
 
-Diversification.Assembly_Freck =  numeric. Biome Diversification values calculated according to a modifyied version of Freckleton's metric of diversification to account only for local diversification;
+JetzTotalComm_mean = numeric. A vector containing mean values of total diversification calculated as harmonic mean of Jetz diversification for each row of matrix W;
+
+JetzLocalComm_mean = numeric. A vector containing mean values of local diversification calculated as the portion of harmonic mean of total Jetz diversification for each row of matrix W;
+
+JetzLocalSpp_mean = numeric. A vector containing mean values of local species diversification calculated as the portion total diverfication of each species;
+
+Diversification.Assembly_Freck =  numeric. Biome Diversification values calculated according to a modifyied version of Freckleton's metric of diversification;
 
 Diversification_total = matrix. Diversification values calculate for species according to Jetz and Freckleton metrics.
-
-PD_local = PD metric calculated as the proportion of PD inside the biome;
-
-PD_total = original PD metric;
-
-age_arrival = age of arrival of the most ancient ancestor in the biome that the actual species occupy.
