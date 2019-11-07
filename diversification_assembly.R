@@ -14,10 +14,6 @@
 # Diversification.Assembly_Freck =  numeric. Biome Diversification values calculated according to a modifyied version of Freckleton's metric of diversification;
 # Diversification_total = matrix. Diversification values calculate for species according to Jetz and Freckleton metrics.
 
-return(list(Ecoregion.per.node=AS,Diversification.Assembly_Jetz=matrix_XJetz, JetzTotalComm_mean= JetzTotalComm_harmonic, JetzLocalComm_mean= JetzLocalComm_harmonic, 
-            JetzLocalSpp_mean= JetzLocalSpp_harmonic, Diversification.Assembly_Freck= matrix_XFreck, Diversification_total= Diversification_table, 
-            PD_local= PD_local, PD_total= PDt, age_arrival= age_arrival))
-
 diversification.assembly<-function(W,tree,ancestral.area,biogeo){
   library(geiger)
   library(ape)
